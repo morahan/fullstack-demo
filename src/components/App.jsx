@@ -11,17 +11,20 @@ class App extends React.Component {
     this.state = {
       filter: 'None',
       bugs: exampleData,
+      current: []
     };
     this.filterHandler = this.filterHandler.bind(this);
   }
 
   filterHandler(filter) {
     this.setState({ filter });
-    console.log(myList.value)
   }
+  // console.log(exampleData);
 
   priority(level) {
-    return exampleData.filter(i => i.threatLevel === level);
+    // console.log(this.bugs.body);
+    // return exampleData.filter(i => i.threatLevel === level);
+    // return exampleData.filter(i => i.threatLevel === this.state.filter);
   }
 
   render() {
