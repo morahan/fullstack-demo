@@ -3,17 +3,17 @@ table {
   margin: 25px auto;
   border-collapse: collapse;
   border: 1px solid #eee;
-  border-bottom: 2px solid #00cccc;
+  border-radius: 37px;
   box-shadow: 0px 0px 20px rgba(0,0,0,0.10),
      0px 10px 20px rgba(0,0,0,0.05),
      0px 20px 20px rgba(0,0,0,0.05),
      0px 30px 20px rgba(0,0,0,0.05);
   tr {
      &:hover {
-      background: #f4f4f4;
+      background: linear-gradient(90deg, yellow, red);
       
       td {
-        color: #555;
+        color: rgb(172, 44, 44);
       }
     }
   }
@@ -25,7 +25,7 @@ table {
     max-width: 400px;
   }
   th {
-    background: #00cccc;
+    background: #44ace8;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;

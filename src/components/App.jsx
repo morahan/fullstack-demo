@@ -17,6 +17,11 @@ class App extends React.Component {
 
   filterHandler(filter) {
     this.setState({ filter });
+    console.log(myList.value)
+  }
+
+  priority(level) {
+    return exampleData.filter(i => i.threatLevel === level);
   }
 
   render() {
